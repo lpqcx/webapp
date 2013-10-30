@@ -1,44 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Bootstrap 101 Template</title>
+    <meta charset="utf-8"> 
+    <title>QiQi and XiXi's Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <style>
-      body{
-        padding-top: 60px;
-      }
-    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <lind href="css/jumbotron.css" rel="stylesheet">
+    <link href="assets/ico/favicon.png" rel="shortcut icon">
+    <meta name="description" content="">
+    <meta name="author" content="">  
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          <a class="navbar-brand" href="#">QiQi and XiXi's Gallery</a>
+	</div>
+	<div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+	      <input class="form-control" type="text" placeholder="Email">
+            </div>
+	    <div class="form-group">
+	      <input class="form-control" type="password" placeholder="Password">
+            </div>
+	    <button type="submit" class="btn">Sign in</button>
+          </form>
         </div>
       </div>
     </div>
 
+    <div class="jumbotron">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="container">
+        <h1>QiQi and XiXi</h1>
+        <p>This is the gallery for QiQi and XiXi, for the memory we spent together.</p>
+        <p><a role="button" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+      </div>
+    </div>  
+    
     <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
 
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+      <hr>
 
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
     </div>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
