@@ -1,77 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-    <title>QiQi and XiXi's Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <lind href="css/jumbotron.css" rel="stylesheet">
-    <link href="assets/ico/favicon.png" rel="shortcut icon">
-    <meta name="description" content="">
-    <meta name="author" content="">  
-  </head>
-  <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">QiQi and XiXi's Gallery</a>
-	</div>
-	<div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-	      <input class="form-control" type="text" placeholder="Email">
-            </div>
-	    <div class="form-group">
-	      <input class="form-control" type="password" placeholder="Password">
-            </div>
-	    <button type="submit" class="btn">Sign in</button>
-          </form>
-        </div>
-      </div>
-    </div>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-    <div class="jumbotron">
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="container">
-        <h1>QiQi and XiXi</h1>
-        <p>This is the gallery for QiQi and XiXi, for the memory we spent together.</p>
-        <p><a role="button" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>  
-    
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+		<title>Starter Template for Bootstrap</title>
 
-      <hr>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="css/webapp.css" rel="stylesheet">
 
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-    </div>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Pengqi's personal webpage</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="starter-template">
+				<h1>Welcome to Pengqi's Webpage</h1>
+				<p class="lead">Please select what you what to know about Pengqi:</p>
+				<div class="list-group col-md-8 col-md-offset-2">
+					<div class="row list-group-item">
+					  <div class="pull-left text-left">
+					  	<h2 class="list-group-item-heading">Personal Page</h2>
+							<p class="list-group-item-text">To know more about Pengqi's background, experience and interests.</p>
+					  </div>
+					  <div class="pull-right">
+					  	<button type="button" class="btn btn-primary btn-lg active">Go to the page!</button>
+					  </div>
+					</div>
+					<div class="row list-group-item">
+					  <div class="pull-left text-left">
+					  	<h2 class="list-group-item-heading">Wedding: QiQi and XiXi</h2>
+							<p class="list-group-item-text">The wonderful wedding for QiQi and XiXi will be hosted on Dec 28th in Beijing!</p>
+					  </div>
+					  <div class="pull-right">
+					  	<button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target=".verivication-modal-sm">Go to the page!</button>
+							<div class="modal fade verivication-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+							  <div class="modal-dialog modal-sm">
+							    <div class="modal-content">
+							    	<form role="form" class="well">
+										  <div class="form-group">
+										    <label for="verificationCode">Please enter the verification code:</label>
+										    <input type="text" class="form-control" id="vCode" placeholder="Enter verification code...">
+										  </div>
+										  <button type="submit" class="btn btn-default">Submit</button>
+										</form>
+										<span id="notification"></span>
+							    </div>
+							  </div>
+							</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
 </html>

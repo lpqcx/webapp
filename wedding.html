@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<title>QiQi and XiXi</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jumbotron.css" rel="stylesheet">
+		<link href="css/webapp.css" rel="stylesheet">
+		<link href="assets/ico/favicon.png" rel="shortcut icon">
+		<meta name="description" content="">
+		<meta name="author" content="">  
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">QiQi and XiXi</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<!-- Main hero unit for a primary marketing message or call to action -->
+			<div class="container">
+				<h1>QiQi and XiXi</h1>
+				<p>Welcome to QiQi and XiXi's wedding page! Our wedding will be held in Beijing on Dec 27th. Welcome to join our wedding and leave your bless here!</p>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="http://i.imgur.com/FOtjuxG.jpg" alt="something">
+							<div class="carousel-caption">
+								<h3>Picture 1</h3>
+								<p>The places we will go to</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="http://i.imgur.com/WkJyGoD.jpg" alt="something">
+							<div class="carousel-caption">
+								<h3>Picture 2</h3>
+								<p>The places we will go to</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="http://i.imgur.com/RsmQRbe.jpg" alt="something">
+							<div class="carousel-caption">
+								<h3>Picture 3</h3>
+								<p>The places we will go to</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>  
+		
+		<div class="container">
+			<!-- Example row of columns -->
+			<div class="row">
+								<!-- Nav tabs -->
+				<ul class="nav nav-tabs" id="myTab">
+				  <li class="active"><a href="#info" data-toggle="tab">Wedding Information</a></li>
+				  <li><a href="#leavebless" data-toggle="tab">Leave your bless here</a></li>
+				  <li><a href="#viewbless" data-toggle="tab">View others' bless</a></li>
+				  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content" id="infobox">
+				  <div class="tab-pane active" id="info">
+				  	<hr>
+				  	<ul class="list-group">
+						  <li class="list-group-item">Date: Dec 27th, 2014</li>
+						  <li class="list-group-item">Time: 12:00pm </li>
+						  <li class="list-group-item">Place: DoubleTree by Hilton Hotel Beijing</li>
+						  <li class="list-group-item">Address: 168 Guang An Men Wai Ave Xi Cheng, Beijing, 100055, China</li>
+						</ul>
+				  </div>
+				  <div class="tab-pane" id="leavebless">
+				  	<hr>
+				  	<form class="form-horizontal" role="form">
+						  <div class="form-group">
+						     <input type="text" class="form-control" placeholder="Leave your name..." id="friend-name">
+						  </div>
+						  <div class="form-group">
+						    <textarea class="form-control" rows="3" placeholder="Leave your bless to us..." id="friend-bless"></textarea>
+						  </div>
+						  <div class="form-group">
+						    <div class="center-block">
+						      <button type="submit" class="btn btn-default">Submit</button>
+						    </div>
+						  </div>
+						</form>
+						<span id="notification"></span>
+				  </div>
+				  <div class="tab-pane" id="viewbless">
+				  	<hr>
+				  	<ul class="list-group">
+				  	</ul>
+				  </div>
+				  <div class="tab-pane" id="settings">...</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<footer>
+				<p>&copy; QiQi and XiXi, 2014</p>
+			</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wedding.js"></script>
+	</body>
+</html>
