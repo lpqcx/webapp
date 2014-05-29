@@ -3,11 +3,13 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 if(process.env.REDISTOGO_URL){
-    var rtg = require("url").parse(process.env.REDISTOGO_URL);
-    var client = require("redis").createClient(rtg.port, rtg.hostname);
-    client.auth(rtg.auth.split(":")[1]);
+    	var rtg = require("url").parse(process.env.REDISTOGO_URL);
+    	var redis = require("redis"),
+		client = redis.createClient(rtg.port, rtg.hostname);
+    	client.auth(rtg.auth.split(":")[1]);
 } else {
-    var client = require("redis").createClient();
+	var redis = require("redis"),
+		client = redis.createClient();
 }
 
 app.use('/assets/img',express.static(__dirname + '/assets/img'));
