@@ -1,8 +1,14 @@
 var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
-var redis = require("redis"),
-        client = redis.createClient();
+
+if(process.env.REDISTOGO_URL){
+    var rtg = require("url").parse(process.env.REDISTOGO_URL);
+    var redis = require("redis").createClient(rtg.port, rtg.hostname);
+    redis.auth(rtg.auth.split(":")[1]);
+} else {
+    var redis = require("redis").createClient();
+}
 
 app.use('/assets/img',express.static(__dirname + '/assets/img'));
 app.use('/js',express.static(__dirname + '/js'));
